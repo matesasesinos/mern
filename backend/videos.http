@@ -1,0 +1,28 @@
+@api = http://localhost:3000
+
+GET {{api}}/videos
+
+###
+GET {{api}}/videos/609f9fdc143e7526007de609
+
+###
+POST {{api}}/videos
+Content-Type: application/json
+
+{
+    "url":"https://www.facebook.com/",
+    "title":"Face",
+    "description": "This is a video a 2"
+}
+
+###
+DELETE {{api}}/videos/609f9fdc143e7526007de609
+
+###
+PUT {{api}}/videos/609f13e2e05b1e3acc7e9372
+Content-Type: application/json
+
+{
+    "title": "video de fat 2z",
+    "description": "no se de que es el video"
+}
